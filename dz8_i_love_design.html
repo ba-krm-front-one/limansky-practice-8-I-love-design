@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Start</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="description" content="" />
+	<link rel="icon" href="favicon.png"/>
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('a[href^="#"]').click(function () {
+				elementClick = $(this).attr("href");
+				destination = $(elementClick).offset().top;
+				if($.browser.safari){
+					$('body').animate( { scrollTop: destination }, 1100 );
+				}else{
+					$('html').animate( { scrollTop: destination }, 1100 );
+				}
+				return false;
+			});
+		});
+	</script>
+
+</head>
+<body>
+<header>
+	<img class="verb" src="img/logo.png" >
+	<h1>I LOVE DESIGN</h1>
+	<P class="mark">I"m glad that you visited my  site where he can get to<br> know me and my work.</P>
+	<a class="butt" href="#top"><img class="button" src="img/2-layers.png"></a>
+</header>
+
+<main class="back" style="background:url('/img/logo.png')">
+	<section>
+		<p class="text">
+			My name is Vlad Musienko, I'm a web designer. I love to draw and all that is connected with the design. In this area a long time ago and during this time I managed to create several successful projects used by people all over the world.
+		</p>
+		<p class="text">
+			I love the simplicity in the design of web sites. As I see it,people, it's like my work. Naturally do not want to rest on our laurels and will continue further studies to improve soybean skills, creating new interesting creative projects.
+		</p>
+		</section>
+	<section>
+		<h2><a id="top" name="top"></a>
+			WHAT I DO
+		</h2>
+		<ul>
+			<li>
+				<h4>TEMPLATE.</h4>
+				<p align="left">Lately, I often create templates for WordPress. The portfolio is the presentation and
+					the
+					opportunity to buy them on the site Themeforest.</p>
+			</li>
+			<li>
+				<h4>BRAND.</h4>
+				<p>Creating a brand is a very complex process aimed at the creation and positioning the unique persons of the company, its products and services.</p>
+			</li>
+			<li>
+				<h4>DREAMS.</h4>
+				<p>Everyone is able to destroy the dream, but not everyone is able to create it. I try to help people in its definition as a person and specialist.</p>
+			</li>
+		</ul>
+	</section>
+
+</main>
+
+
+</script>
+</body>
+</body>
+</html>
