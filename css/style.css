@@ -1,0 +1,140 @@
+*{
+	text-align: center;
+}
+header{
+	background: #23232e;
+	color:white;
+	width: auto;
+		heigth: 850px;
+}
+header > h1{
+	font-size: 80px;
+	font-family: "Segoe UI";
+
+	margin: 50px 0 50px;
+}
+p.mark{
+	font-family: "Segoe UI";
+	font-size: 18px;
+	vertical-align: middle;
+
+}
+.verb{
+	margin: 80px 0 185px;
+
+}
+.button{
+	margin: 185px 0 50px;
+}
+/*анимация кнопки*/
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+.button:hover{
+	animation: bounce 1s;
+	/*box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5);*/
+	/*outline-color: rgba(255, 255, 255, 0);*/
+	/*outline-offset: 15px;*/
+}
+
+.back{
+	heigth: 1000px;
+	text-align: center;
+	/*background: url("img\logo.png");*/
+}
+
+.text{
+	margin-top:50px;
+	margin-left: 500px;
+	margin-right: 500px;
+	font-size: 30px;
+	line-height: 42px;
+	font-weight: 400;
+	font-family: "Segoe UI";
+	color: #464b4f;
+}
+h2{
+	font-size: 80px;
+}
+li{
+display:inline-block;
+	max-width:286px;
+	font-family:"Segoe UI";
+	font-size: 18px;
+	}
+ul>li{
+	margin: 0px 34px;
+}
+p{
+	text-alignalign: left;
+}
+/* Layout
+ */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1200px;
+}
+
+
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
